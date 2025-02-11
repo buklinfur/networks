@@ -1,2 +1,2 @@
 # NSU Network programming
-This repository contains tasks for Network programming couse in NSU. 
+This repository contains tasks for Network programming course in NSU. 
