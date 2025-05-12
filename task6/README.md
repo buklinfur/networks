@@ -6,7 +6,7 @@ This program contains methods to save and get urls from DB using Docker containe
 * Run the PostgreSQL server.
 * To start app run:
 ``` commandline
-docker-compose up --build   
+docker-compose up -d
 ```
 * To save url run:
 ```commandline
