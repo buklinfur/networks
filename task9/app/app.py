@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask, request, jsonify
 import psycopg2
 
@@ -5,11 +7,11 @@ app = Flask(__name__)
 
 
 DB_CONFIG = {
-    "dbname": "url_db",
-    "user": "docker_user",
-    "password": "docker_password",
-    "host": "db",
-    "port": "5432"
+    "dbname": os.environ["DB_NAME"],
+    "user": os.environ["DB_USER"],
+    "password": os.environ["DB_PASSWORD"],
+    "host": os.environ.get("DB_HOST", "db"),
+    "port": os.environ.get("DB_PORT", "5432"),
 }
 
 

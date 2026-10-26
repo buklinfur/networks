@@ -4,6 +4,10 @@ This program contains methods to save and get urls from DB using Docker containe
 
 ### Program usage
 * Run the PostgreSQL server.
+* Copy `.env.example` to `.env` and set the database credentials:
+```commandline
+cp .env.example .env
+```
 * To start app run:
 ``` commandline
 docker-compose up -d
